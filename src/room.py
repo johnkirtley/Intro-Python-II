@@ -10,4 +10,11 @@ class Room:
 
     def print_items(self):
         for i in self.items:
-            print(i)
+            item_index = self.items.index(i) + 1
+            print(f'{item_index}: {i}')
+
+    def remove_item(self, item):
+        return self.items.remove(item)
+
+    def add_item(self, item):
+        return self.items.append(item)
