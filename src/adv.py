@@ -54,7 +54,7 @@ while True:
     if len(player1.current_items) > 0:
 
         drop_item_action = input(
-            'Would you like to drop an item in this room? (drop [item_name] or n for No)').split()
+            'Would you like to drop an item in this room? (drop [item_name] or n for No) ').split()
 
         if drop_item_action[0].lower() == 'drop':
             for i in player1.current_items:
@@ -70,7 +70,7 @@ while True:
         player1.current_room.print_items()
 
         get_item = input(
-            'Would you like to select an item? (get [item_name]) or n for No').split()
+            'Would you like to select an item? (get [item_name]) or n for No ').split()
 
         if get_item[0].lower() == 'get':
 
